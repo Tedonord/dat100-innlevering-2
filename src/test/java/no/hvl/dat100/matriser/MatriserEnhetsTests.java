@@ -7,7 +7,6 @@ import org.junit.jupiter.api.Timeout;
 
 @Timeout(30)
 class MatriserEnhetsTests {
-
 	static int[][] a,b,c;
 
 	@BeforeEach

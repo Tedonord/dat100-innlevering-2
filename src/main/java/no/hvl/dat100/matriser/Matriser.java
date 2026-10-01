@@ -103,9 +103,24 @@ public class Matriser {
 
 	// f)
 	public static int[][] multipliser(int[][] a, int[][] b) {
+		int[][] multi = new int[a.length][b[0].length];
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden multipliser ikke implementert");
+		if (a[0].length == b.length){
+			for (int i = 0; i < a.length;i++){
+				for (int j = 0; j < b.length;j++){
+					for (int f = 0; f < b[0].length;f++){
+						multi[i][f] += a[i][j]*b[j][f];
+					}
+				}
+			}
+
+			return multi;
+
+		}
+		else{
+			System.out.println("Matrisene kan ikke ganges, null-matrise returnes");
+			return multi;
+		}
 	
 	}
 }

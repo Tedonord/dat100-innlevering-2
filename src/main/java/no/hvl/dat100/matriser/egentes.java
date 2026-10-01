@@ -1,12 +1,10 @@
 package no.hvl.dat100.matriser;
-import java.util.Arrays;
 
 public class egentes {
     public static void main(String[] args) {
-        int[][] tabell = {{1,2,3},{4,5,6},{7,8,9}};
-        Matriser.skrivUt(tabell);
-
-        int[][] speilet = Matriser.speile(tabell);
-        Matriser.skrivUt(speilet);
+        int[][] tabell = {{2,1,3}};
+        int[][] tabell2 = {{3,1},{4,2},{5,3}};
+        int[][] mlti = Matriser.multipliser(tabell, tabell2);
+        Matriser.skrivUt(mlti);
     }
 }
